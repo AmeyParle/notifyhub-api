@@ -1,0 +1,37 @@
+{
+  "name": "notificationhub",
+  "version": "1.0.0",
+  "description": "Event-driven notification service built with Node.js, Express, PostgreSQL, and Prisma",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:studio": "prisma studio"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "postgresql",
+    "prisma",
+    "notifications",
+    "microservice",
+    "backend"
+  ],
+  "author": "Amey Parle",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^6.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "helmet": "^8.1.0",
+    "morgan": "^1.10.0",
+    "pg": "^8.13.3",
+    "prisma": "^6.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
